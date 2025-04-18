@@ -6,6 +6,7 @@
   <title>Rankaroo | Products</title>
   <link rel="icon" type="image/x-icon" href="../icons/favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body class="bg-white">
 
@@ -59,7 +60,7 @@
           </div>
           <div class="mt-4 flex justify-between items-center">
             <span class="text-lg font-bold text-gray-900">$4.99</span>
-            <button onclick="purchaseAlert('VIP Rank')" class="px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-800 transition text-sm">Purchase</button>
+            <button onclick="buyProduct('starter')" class="px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-800 transition text-sm">Purchase</button>
           </div>
         </div>
 
@@ -71,7 +72,7 @@
           </div>
           <div class="mt-4 flex justify-between items-center">
             <span class="text-lg font-bold text-gray-900">$9.99</span>
-            <button onclick="purchaseAlert('Elite Bundle')" class="px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-800 transition text-sm">Purchase</button>
+            <button onclick="buyProduct('premium')" class="px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-800 transition text-sm">Purchase</button>
           </div>
         </div>
 
