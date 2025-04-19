@@ -91,6 +91,23 @@
     </div>
   </section>
 
+<form id="checkout-form">
+  <label for="product">Select Plan:</label>
+  <select id="product" name="productId" required>
+    <option value="starter">Starter Plan</option>
+    <option value="premium">Premium Plan</option>
+  </select>
+
+  <label for="robloxUsername">Roblox Username:</label>
+  <input type="text" id="robloxUsername" name="robloxUsername" required>
+
+  <label for="discordUserId">Discord User ID:</label>
+  <input type="text" id="discordUserId" name="discordUserId" required>
+
+  <button type="submit">Checkout</button>
+</form>
+
+  
   <!-- Notification Script -->
   <script>
     function purchaseAlert(product) {
